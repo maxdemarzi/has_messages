@@ -1,4 +1,5 @@
 require 'state_machine'
+require 'has_messages/has_uuid'
 
 # Adds a generic implementation for sending messages between users
 module HasMessages
