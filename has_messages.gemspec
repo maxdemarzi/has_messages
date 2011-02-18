@@ -29,4 +29,6 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<state_machine>, [">= 0.7.0"])
   end
+      s.add_dependency(%q<state_machine>, [">= 0.7.0"])
+  s.add_dependency "uuidtools"
 end
