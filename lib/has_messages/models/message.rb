@@ -26,6 +26,7 @@
 # * +hide+ -Hides the message from the sender
 # * +unhide+ - Makes the message visible again
 class Message < ActiveRecord::Base
+  has_uuid
   belongs_to  :sender, :polymorphic => true
   belongs_to  :original_message, :class_name => 'Message'
   has_many    :recipients, :class_name => 'MessageRecipient', :order => 'kind DESC', :dependent => :destroy
